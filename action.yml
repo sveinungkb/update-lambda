@@ -11,8 +11,8 @@ inputs:
   function-name:
     description: 'Lambda Function Name'
     default: ''
-  function-name:
-    description: 'Publish updated version'
+  publish:
+    description: 'Publish updated version or make it a draft'
     default: false
   AWS_SECRET_KEY:
     description: 'AWS Secret Key'
