@@ -27,7 +27,7 @@ try {
 
   const params = {
     FunctionName: functionName,
-    Publish: false,
+    Publish: core.getInput('publish'),
     ZipFile: zipBuffer,
   };
 
