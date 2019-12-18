@@ -13,7 +13,7 @@ inputs:
     default: ''
   publish:
     description: 'Publish updated version or make it a draft'
-    default: false
+    default: 'false'
   AWS_SECRET_KEY:
     description: 'AWS Secret Key'
     default: ''
