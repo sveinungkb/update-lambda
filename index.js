@@ -9,6 +9,7 @@ try {
   const AWS_SECRET_KEY = core.getInput('AWS_SECRET_KEY');
   const AWS_SECRET_ID = core.getInput('AWS_SECRET_ID');
   const AWS_REGION = core.getInput('AWS_REGION');
+  const publish = core.getInput('publish') === 'true';
 
   console.log(`Updating Function Name ${functionName} with ${package}!`);
 
@@ -27,7 +28,7 @@ try {
 
   const params = {
     FunctionName: functionName,
-    Publish: core.getInput('publish'),
+    Publish: publish,
     ZipFile: zipBuffer,
   };
 
